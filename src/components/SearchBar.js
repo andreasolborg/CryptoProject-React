@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import './searchBar.css';
 
-
+// SearchBar component
 const SearchBar = ({ coins, setSearchResults }) => {
     const handleSubmit = (e) => { e.preventDefault(); } // prevent page reload on submit
 

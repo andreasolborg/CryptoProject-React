@@ -1,18 +1,11 @@
-import '../../App.css';
 import { useState, useEffect } from 'react';
-import Navbar from '../../components/navbar';
-import {BrowserRouter, Routes} from 'react-router-dom';
 import SearchBar from '../../components/SearchBar';
 import ListPage from '../../components/ListPage';
 import axios from 'axios';
 import AnimatedPage from '../../components/AnimatedPage';
-import { GET_API_URL } from '../../api';
-import ResponsiveAppBar from '../../components/ResponsiveAppBar';
-import { Route, Link } from 'react-router-dom';
-//import { BitcoinPage } from '../../BitcoinPage';
 
 
-
+//
 function SearchPage() {
 
     const [searchResults, setSearchResults] = useState([]);
@@ -35,6 +28,7 @@ function SearchPage() {
     useEffect(() => {
         const fetchData = async () => {
             const result = await axios.get("https://api.coingecko.com/api/v3/coins/"); // get all coins
+            console.log(result.data);
             setCoins(result.data); // set coins to the data returned from the api
         };
         fetchData(); // call the function
@@ -45,7 +39,7 @@ function SearchPage() {
         <div>
             <AnimatedPage>
                 <SearchBar coins={coins} setSearchResults={setSearchResults} />
-                <ListPage searchResults={searchResults} />
+                <ListPage searchResults={searchResults} /> 
             </AnimatedPage>
         </div>
     )
