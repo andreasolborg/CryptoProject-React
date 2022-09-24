@@ -1,4 +1,4 @@
 # Cryptocurrency API project
-## Getting started run:
+## Getting started
 
-npm install
+run npm install
