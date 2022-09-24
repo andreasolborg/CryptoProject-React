@@ -1,0 +1,40 @@
+.Navbar {
+    background-color: #ffffff;
+    position: static;
+    width: 100%;
+}
+
+.navbarUser {
+    float: right;
+    margin: 0%;
+    right: 10%;
+    top: 0%;
+    color: black;
+}
+
+#navbarMatch {
+    margin-left: 7%;
+    left: 8%;
+    font-size: 20px;
+}
+
+#navbarGroup {
+    margin-left: 7%;
+    left: 13%;
+    font-size: 20px;
+}
+
+#navbarChat {
+    margin-left: 7%;
+
+    left: 18%;
+    font-size: 20px;
+}
+
+#navbarUser {
+    position: absolute;
+    float: right;
+    margin: 0%;
+    left: 92%;
+    top: 0%;
+}

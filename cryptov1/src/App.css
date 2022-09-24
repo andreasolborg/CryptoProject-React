@@ -1,0 +1,39 @@
+body {
+  background-color: #4a8ee763;
+}
+.box1{
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
+  color: #070600;
+  background-color: #ffffff;
+  padding: 10px 30px;
+  margin: 20px auto 0 auto;
+}
+
+.header{
+  font-size: 100%;
+}
+.list{
+  padding-inline-start: 0px;
+}
+
+.cryptoImage{
+  width: 20%;
+  border-style: solid;
+  border: 2px black;
+}
+
+.coinMarketDataUSD{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.coinMarketDataEUR{
+  font-size: 20px;
+  font-weight: 600;
+}
