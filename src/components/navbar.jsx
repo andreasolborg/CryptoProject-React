@@ -15,9 +15,7 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import './navbar.css';
 
 export default function Navbar() {
-
   const [value, setValue] = React.useState(0);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };

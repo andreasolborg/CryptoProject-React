@@ -5,11 +5,13 @@ import './listPage.css';
 const ListPage = ({ searchResults }) => { // searchResults is an array of coins
     const results = searchResults.map((coin) => <Coin key={coin.id} coin={coin} />) // map through search results and return Coin component for each coin
     const content = searchResults.length ? results :
-        <article>
+        <div className="box1">
+        <article className="article">
             <AnimatedPage>
-                <p className="noResults">NO RESULTS</p>
+                <p className="noResults">No results</p>
             </AnimatedPage>
-        </article> // if no results, display "no results" message
+        </article>
+        </div>
     return (
 
         <main>

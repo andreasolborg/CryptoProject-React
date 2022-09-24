@@ -7,4 +7,4 @@ const getApiOptions = {
 };
 
 // Language: javascript
-const GET_API_URL = "https://investing-cryptocurrency-markets.p.rapidapi.com/";
+const GET_API_URL = "https://api.coingecko.com/api/v3/coins/"; // get all coins
