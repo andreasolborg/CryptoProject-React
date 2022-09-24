@@ -1,5 +1,10 @@
+html{
+  min-height: 100%;
+}
+
 body {
-  background-color: #4a8ee763;
+  background: rgb(71,0,164);
+  background: linear-gradient(180deg, rgba(71,0,164,1) 0%, rgba(0,0,0,1) 100%);
 }
 .box1{
   width: 50%;
@@ -12,28 +17,10 @@ body {
   color: #070600;
   background-color: #ffffff;
   padding: 10px 30px;
-  margin: 20px auto 0 auto;
+  margin: 20px auto 20px auto;
 }
 
-.header{
-  font-size: 100%;
-}
+
 .list{
   padding-inline-start: 0px;
-}
-
-.cryptoImage{
-  width: 20%;
-  border-style: solid;
-  border: 2px black;
-}
-
-.coinMarketDataUSD{
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.coinMarketDataEUR{
-  font-size: 20px;
-  font-weight: 600;
 }
