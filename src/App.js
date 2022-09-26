@@ -5,6 +5,7 @@ import ResponsiveAppBar from './components/ResponsiveAppBar';
 import { Route, Link } from 'react-router-dom';
 import SearchPage from './pages/SearchPage/SearchPage';
 import BitcoinPage from './pages/BitcoinPage/BitcoinPage';
+import Coin from './components/Coin';
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
       <ResponsiveAppBar />
       <Routes>
         <Route path="/home" element={<SearchPage />} />
-        <Route path="/bitcoin" element={<BitcoinPage />} />
+        <Route path="/btc" element={<BitcoinPage />} />
+        <Route path="/eth" element={<BitcoinPage />} />
       </Routes>
     </BrowserRouter>
   )

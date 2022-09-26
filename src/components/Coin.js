@@ -1,11 +1,13 @@
 import React from 'react'
 import AnimatedPage from './AnimatedPage'
 import './coin.css'
+import { useState } from 'react'
 
 const Coin = ({ coin }) => { // coin is an object
+
   return (
     <AnimatedPage>
-      <a href={`/${coin.name.toLowerCase()}`} style={{ textDecoration: 'none' }}>
+      <a href={`/${coin.symbol.toLowerCase()}`} style={{ textDecoration: 'none' }}>
         <div className="box1">
           <div className="cryptoImageBox">
             <img className="cryptoImage" src={coin.image.large} alt={coin.name} /> {/*image is a property of coin*/}
