@@ -38,15 +38,41 @@
 }
 
 .tableHead{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #000;
-    width: 50%;
+    background-color: rgb(237, 237, 237);
+    margin: 10px;
 }
 
 
 .css-1066skd{
     margin-left: 25%;
+}
+
+.coinTable{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+tr{
+    border-bottom: 1px solid #000;
+}
+
+td{
+    width: 25%;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+th{
+    width: 25%;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.tableBorder{
+    border-radius: 10px;
+    overflow: hidden;
 }

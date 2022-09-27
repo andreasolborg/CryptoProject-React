@@ -1,14 +1,10 @@
-import React, { useMemo } from 'react'
+import React from 'react'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './bitcoinPage.css';
 import AnimatedPage from '../../components/AnimatedPage';
 import Moment from 'react-moment';
-import { useTable } from "react-table"
-import tw from "twin.macro"
-import Coin from '../../components/Coin';
 import { Table } from "react-bootstrap";
-
 
 
 
@@ -60,22 +56,18 @@ function BitcoinPage() {
     return (
         <AnimatedPage>
             <div className="coinContainer">
-                <AnimatedPage>
-                    <ul className="pageNumbers">
-                        {renderPageNumbers}
-                    </ul>
-                </AnimatedPage>
-                <Table striped bordered hover>
-                    <thead>
+                <Table className="coinTable" striped bordered hover>
+                    <div className="tableBorder">
+                    <thead className="tableHead">
                         <tr>
-                            <th>Date: </th>
+                            <th>Date </th>
                             <th onClick={() => console.log("Sorting function")}>
                                 Open value ($)
                             </th>
-                            <th>High: </th>
-                            <th>Low: </th>
-                            <th>Close: </th>
-                            <th>Volume: </th>
+                            <th>High </th>
+                            <th>Low </th>
+                            <th>Close </th>
+                            <th>Volume </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -83,11 +75,11 @@ function BitcoinPage() {
                             currentPosts.map((coin) => {
                                 return (
                                     <tr key={coin.time}>
-                                        <td><Moment unix>{coin.time}</Moment></td>
-                                        <td>{coin.open}</td>
-                                        <td>{coin.high}</td>
-                                        <td>{coin.low}</td>
-                                        <td>{coin.close}</td>
+                                        <td><Moment unix format="LL">{coin.time}</Moment></td>
+                                        <td>{coin.open}$</td>
+                                        <td>{coin.high}$</td>
+                                        <td>{coin.low}$</td>
+                                        <td>{coin.close}$</td>
                                         <td>{coin.volumefrom}</td>
                                     </tr>
                                 )
@@ -96,10 +88,16 @@ function BitcoinPage() {
                             <></>
                         )}
                     </tbody>
+                    </div>
                 </Table>
-
+                <AnimatedPage>
+                    <ul className="pageNumbers">
+                        {renderPageNumbers}
+                    </ul>
+                </AnimatedPage>
             </div>
         </AnimatedPage>
+        
 
     )
 }

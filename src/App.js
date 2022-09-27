@@ -14,6 +14,7 @@ function App() {
     <BrowserRouter> 
       <ResponsiveAppBar />
       <Routes>
+        <Route path="/" element={<SearchPage />} />
         <Route path="/home" element={<SearchPage />} />
         <Route path="/btc" element={<BitcoinPage />} />
         <Route path="/eth" element={<BitcoinPage />} />
