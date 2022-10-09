@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/andreasolborg/CryptoProject-React/static/css/main.be7cb56f.css",
+    "main.js": "/andreasolborg/CryptoProject-React/static/js/main.76881887.js",
+    "static/js/787.5991af0e.chunk.js": "/andreasolborg/CryptoProject-React/static/js/787.5991af0e.chunk.js",
+    "index.html": "/andreasolborg/CryptoProject-React/index.html",
+    "main.be7cb56f.css.map": "/andreasolborg/CryptoProject-React/static/css/main.be7cb56f.css.map",
+    "main.76881887.js.map": "/andreasolborg/CryptoProject-React/static/js/main.76881887.js.map",
+    "787.5991af0e.chunk.js.map": "/andreasolborg/CryptoProject-React/static/js/787.5991af0e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be7cb56f.css",
+    "static/js/main.76881887.js"
+  ]
+}
