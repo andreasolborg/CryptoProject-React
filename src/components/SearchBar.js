@@ -19,12 +19,14 @@ const SearchBar = ({ coins, setSearchResults }) => {
 
     return (
         <header className="searchHeader">
+            
             <form className="search" onSumbit={handleSubmit}>
                 <input
                     className='searchInput'
                     type="text"
                     placeholder="Search"
                     onChange={handleSearchChange}
+                    
                 />
                 <button className="searchButton">
                     <FontAwesomeIcon icon={faMagnifyingGlass} />

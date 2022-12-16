@@ -5,11 +5,13 @@ import axios from 'axios';
 import AnimatedPage from '../../components/AnimatedPage';
 
 
-//
-function SearchPage() {
 
+//
+export default function SearchPage() {
+    
     const [searchResults, setSearchResults] = useState([]);
     const [coins, setCoins] = useState([]); // coins is an array of objects
+
 
 
     useEffect(() => {
@@ -23,17 +25,17 @@ function SearchPage() {
     }, []);
 
 
-
-    /*useeffect with async await*/
     useEffect(() => {
         const fetchData = async () => {
             const result = await axios.get("https://api.coingecko.com/api/v3/coins/"); // get all coins
-            console.log(result.data);
             setCoins(result.data); // set coins to the data returned from the api
+            setSearchResults(result.data); // set search results to the data returned from the api
         };
         fetchData(); // call the function
     }, []);
+    
 
+    
 
     return (
         <div>
@@ -44,5 +46,3 @@ function SearchPage() {
         </div>
     )
 }
-
-export default SearchPage;
